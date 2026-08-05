@@ -1,5 +1,4 @@
 function Glow({
-    size = "400px",
     color = "bg-cyan-500/20",
     blur = "blur-3xl",
     className = "",
@@ -14,11 +13,7 @@ function Glow({
             ${blur}
             ${className}
         `}
-        style={
-            {
-            width: size,
-            height: size,
-            }}
+        
         />
     );
 }
