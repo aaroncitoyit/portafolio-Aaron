@@ -24,7 +24,7 @@ function About(){
                             Sobre mi
                         </p>
 
-                        <h2 className="
+                       {/*  <h2 className="
                             text-5x1
                             font-bold
                             text-white
@@ -32,9 +32,9 @@ function About(){
                         ">
 
                             Conoce un poco más sobre mi
-                        </h2>
+                        </h2> */}
 
-                        <p className="
+                {/*         <p className="
 
                             text-slate-400
                             max-w-2x1
@@ -45,7 +45,7 @@ function About(){
                             aprender nuevas tecnologías y crear soluciones
                             que realmente aporten valor.
 
-                        </p>
+                        </p> */}
 
 
                     </div>

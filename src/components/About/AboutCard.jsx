@@ -1,97 +1,89 @@
 import {
-    FaJava,
-    FaReact,
-    FaLaravel,
     FaMapMarkerAlt
 }   from "react-icons/fa";
 
-import {
-    SiSpringboot,
-    SiMysql
-}   from "react-icons/si"
+import profileImage from "../../assets/Images/profile.png";
+
 
 
 function AboutCard(){
     return(
-        <div 
-            className="
-            bg-slate-900/70
-            border
-            border-slate-800
-            rounded-3x1
-            p-10
-            backdrop-blur
-            shadow-x1
-            "> 
-                <div className="space-y-8">
+        <div className="relative"> 
+                <div 
+                    className="
+                        relative
+                        h-[260px]
+                        sm:h-[300px]
+                        lg:h-[340px]
+                        rounded-3xl
+                        overflow-hidden
+                        border
+                        border-slate-800
+                        bg-linear-to-br
+                        from-slate-900
+                        to-slate-950
+                    ">
 
-                    <div>
-                        <h3 className="text-white text-2xl font-bold">
-                            Perfil Profesional
-                        </h3>
-                        <p className="text-slate-400 mt-2">
-                            Egresado de Desaroolo de Software.
-                        </p>
-                    </div>
+                        <img 
+                            src={profileImage}
+                            alt= "Aaron Macedo"
+                            className="w-full h-full object-cover"
+                        />
 
-                
+                </div>
 
-                    <div className="space-y-4">
-
-                        <div className="flex items-center gap-3 text-slate-300">
-                            <FaJava className="text-orange-500 text-xl"/>
-                            Java        
+                <div 
+                    className="
+                    absolute
+                    -bottom-5
+                    sm:-bottom-6
+                    left-4
+                    right-4
+                    sm:left-6
+                    sm:right-6
+                    bg-slate-900/90
+                    backdrop-blur
+                    border
+                    border-slate-800
+                    rounded-2xl
+                    px-4
+                    py-3
+                    sm:px-5
+                    sm:py-4
+                    flex
+                    flex-col
+                    sm:flex-row
+                    items-start
+                    sm:items-center
+                    justify-between
+                    gap-2
+                    sm:gap-0
+                    shadow-xl
+                    ">
+                        <div 
+                            className="
+                                flex
+                                items-center
+                                gap-2
+                                text-slate-300
+                                text-xs
+                                sm:text-sm
+                            ">
+                                <FaMapMarkerAlt className="text-sky-400"/>
+                                Peru
+                        </div>
+                        <div className="
+                                flex
+                                items-center
+                                gap-2
+                                text-green-400
+                                text-xs
+                                sm:text-sm
+                            ">
+                                <span className="w-2 h-2 rounded-full bg-green-400"/>
+                                   Disponible
                         </div>
 
-                        <div className="flex items-center gap-3 text-slate-300">
-                            <SiSpringboot className="text-green-500 text-xl"/>
-                            Spring Boot
-                        </div>
-
-                        <div className="flex items-center gap-3 text-slate-300">
-                            <FaLaravel className="text-red-500 text-xl"/>
-                            Laravel
-                        </div>
-
-                        <div className="flex items-center gap-3 text-slate-300">
-                            <FaReact className="text-cyan-400 text-xl"/>
-                            React
-                        </div>
-                        <div className="flex items-center gap-3 text-slate-300">
-                            <SiMysql className="text-blue-400 text-xl"/>
-                            Mysql
-                        </div>
-
-                    </div>
-
-                    <div className="border-t border-slate-800 pt-6">
-
-                        <div className="flex items-center gap-3 text-slate-400">
-
-                            <FaMapMarkerAlt />
-                            Peru
-
-                        </div>
-                            <div 
-                                className="
-                                    mt-4
-                                    inline-flex
-                                    items-center
-                                    gap-2
-                                    px-4
-                                    py-2
-                                    rounded-full
-                                    bg-green-500/10
-                                    border
-                                    border-green-500/20
-                                    text-green-400
-                                    text-sm
-                                ">
-                                    <span className="w-2 h-2 rounded-full bg-green-400"></span>
-                                    Disponibilidad para trabajar
-
-                            </div>
-                        </div>
                 </div>
         </div>
     );
