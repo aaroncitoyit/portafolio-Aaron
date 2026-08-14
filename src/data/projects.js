@@ -3,8 +3,8 @@
 export const projects =[
     {
         id: "taskflow",
-        title: "taskflow",
-        descripcion:"Aplicación de gestión de tareas con autenticación, asignacion y seguimiento de procesos en tiempo real.",
+        name: "taskflow",
+        description:"Aplicación de gestión de tareas con autenticación, asignacion y seguimiento de procesos en tiempo real.",
         image:null,
         technologies:["Java", "Spring Boot", "React", "MySQL"],
         github:"",
