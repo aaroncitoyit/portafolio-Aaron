@@ -5,9 +5,9 @@ function AboutContent(){
         <div className="space-y-8">
             <h3 
                 className="
-                    text-3x1
+                    text-3xl
                     font-medium
-                    md:text-[clam(1.5rem,2vw+1rem,1.5rem)]
+                    md:text-[clamp(1.5rem,2vw+1rem,1.5rem)]
                     text-(--color-title)
                     leading-snug
                     mb-6

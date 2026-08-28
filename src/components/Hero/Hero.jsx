@@ -12,8 +12,9 @@ function Hero(){
             className="
                 min-h-screen
                 lg:min-h-[90vh]
-                py-24
-                lg:py-0
+                pt-20 lg:pt-32
+                pb-24
+                lg:pb-0
                 flex
                 items-center
                 relative
@@ -42,7 +43,9 @@ function Hero(){
                         lg:items-start
                         lg:justify-between 
                         gap-16 
-                        lg:gap-24"
+                        lg:gap-24
+                        w-full
+                    "
 
                 >
                     <HeroContent/>

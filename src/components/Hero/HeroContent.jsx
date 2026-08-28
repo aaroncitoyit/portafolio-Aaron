@@ -6,7 +6,7 @@ import { profile  } from "../../data/profile";
 function HeroContent(){
     return(
 
-        <div className="max-w-2x1">
+        <div className="max-w-2xl">
             <div className="space-y-4 lg:space-y-4">
 
             <p className="text-sky-400 font-semibold tracking-[0.2em] uppercase">

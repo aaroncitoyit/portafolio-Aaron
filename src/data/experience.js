@@ -2,13 +2,13 @@ import { FaBriefcase, FaPalette, FaServer, FaFlask } from "react-icons/fa";
 export const experience =[
     {
         id: "Ozado",
-        role: "Desarrolador Front-End",
+        role: "Desarrollador Front-End",
         company: "Ozado",
         period: "Marzo 2026 - Julio 2026",
-        ico: FaBriefcase,
+        icon: FaBriefcase,
         description:
-            "Desarrollo de paginas web utilizando Wordpress, React y Next.js para la construccion de interfaces dinamicas y funciones, priorizando usabilidad y rendimiento.",
-        tech: ["WordPress", "React", "Next.j", "MySQL", "PostgreSQL"],
+            "Desarrollo de páginas web utilizando WordPress, React y Next.js para la construcción de interfaces dinámicas y funcionales, priorizando usabilidad y rendimiento.",
+        tech: ["WordPress", "React", "Next.js", "MySQL", "PostgreSQL"],
         achievements:[
             "Integración y manejo de bases de datos en MySQL y PostgreSQL",
             "Colaboración en soluciones web adaptadas a los requerimientos del proyecto",
@@ -18,11 +18,11 @@ export const experience =[
     {
         id: "Invitro",
         role: "Desarrollador Jr",
-        Company: "Invitro Angencia",
+        company: "Invitro Agencia",
         icon: FaPalette,
         description:
             "Desarrollo de sitios web corporativos en WordPress, seleccionando e integrando plugins estratégicos para maximizar la funcionalidad.",
-        tech: ["WorPress", "UI/UX", "Responsive Desing"],
+        tech: ["WordPress", "UI/UX", "Responsive Design"],
         achievements: [
             "Gestión de identidad visual, ajustes de UI/UX y optimización de activos gráficos",
             "Optimización de velocidad de carga y mantenimiento técnico de la plataforma",
@@ -35,7 +35,7 @@ export const experience =[
         company: "Printer M&D",
         period: "Agosto 2025 - Octubre 2025",
         icon: FaServer,
-        decription:
+        description:
             "Desarrollo backend utilizando Laravel y React.js, con foco en autenticación de usuarios y consumo de APIs REST.",
         tech: ["Laravel", "React", "REST API", "JWT"],
         achievements: [
@@ -47,9 +47,9 @@ export const experience =[
     {
         id: "ICSM",
         role: "Desarrollador Frontend",
-        Company: "Instituto Cientifico Sostenible Minero",
+        company: "Instituto Cientifico Sostenible Minero",
         icon: FaFlask,
-        decription:
+        description:
             "Colaboración activa en la creación y optimización de la base de datos necesaria para el correcto funcionamiento del sistema.",
         tech: ["SQL", "Figma", "React"],
         achievements: [

@@ -11,20 +11,20 @@ function SkillCategory({ icon: Icon, title, description, items }){
     const itemsAMostrar = verTodo ? items : items.slice(0, LIMITE_VISIBLE);
 
     return(
-        <div
-            className="
-                bg-(--color-card)
-                border
-                border(--color-border)
-                rounded-2xl
-                p-5
-                sm:p-6
-                flex
-                flex-col
-                gap-5
-                sm:gap-6
-            "
-            >
+<div 
+                className="
+                    bg-(--color-card)
+                    border
+                    border-(--color-border)
+                    rounded-2xl
+                    p-5
+                    sm:p-6
+                    flex
+                    flex-col
+                    gap-5
+                    sm:gap-6
+                "
+                >
             <div className="flex items-center gap-3 sm:gap-4">
                 <div 
                     className="
@@ -33,7 +33,7 @@ function SkillCategory({ icon: Icon, title, description, items }){
                         rounded-full
                         bg-(--color-surface)
                         border
-                        border(--color-border)
+                        border-(--color-border)
                         flex
                         items-center
                         justify-center
@@ -51,7 +51,7 @@ function SkillCategory({ icon: Icon, title, description, items }){
                     ">
                         {title}
                     </h3>
-                    <p className="text-sx sm:text-sm text-(--color-muted)">
+                    <p className="text-sm text-(--color-muted)">
                         {description}
                     </p>
                 </div>
@@ -73,7 +73,7 @@ function SkillCategory({ icon: Icon, title, description, items }){
                         onClick={() => setVerTodo(!verTodo)}    
                         className="
                             self-start
-                            text-x
+                            text-xs
                             sm:text-sm
                             text-(--color-primary)
                             hover:underline
@@ -83,7 +83,7 @@ function SkillCategory({ icon: Icon, title, description, items }){
                         "
                       >
                         {verTodo ? "Ver menos" : "Ver más"}
-                        <span className={`transition-transform $ {verTodo ? "rotate-180" : ""}`}>
+                        <span className={`transition-transform ${verTodo ? "rotate-180" : ""}`}>
                             ▾
                         </span>
                     </button>

@@ -1,9 +1,23 @@
+import { useState } from "react";
 import Container from "../ui/Container";
-import Logo from "./logo";
+import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
 
 function Navbar(){
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const links = [
+        { name: "Acerca de", href: "#about" },
+        { name: "Habilidades", href: "#skills" },
+        { name: "Proyectos", href: "#projects" },
+        { name: "Experiencia", href: "#experience" },
+        { name: "Educación", href: "#education" },
+        { name: "Contacto", href: "#contact" },
+    ];
+
+    const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
     return(
         <header 
             className="
@@ -12,6 +26,10 @@ function Navbar(){
                 left-0
                 w-full
                 z-50
+                bg-(--color-background)/90
+                backdrop-blur-md
+                border-b
+                border-(--color-border)
             "
             >
                 <Container>
@@ -22,12 +40,17 @@ function Navbar(){
                                 items-center
                                 justify-between
                             "
-                            >
-                                <Logo />
-                                <NavLinks />
-                                <MobileMenu />
+                        >
+                            <Logo />
+                            <NavLinks />
+                            <MobileMenu 
+                                isOpen={isMobileMenuOpen} 
+                                onToggle={setIsMobileMenuOpen}
+                                links={links}
+                                onLinkClick={closeMobileMenu}
+                            />
 
-                            </div>
+                        </div>
                 </Container>
         </header>
     );

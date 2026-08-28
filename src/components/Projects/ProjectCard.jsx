@@ -7,7 +7,7 @@ function ProjectCard({name, description, image, technologies, github, demo}){
         <div className="
                 bg-(--color-card)
                 border
-                border-(--color-borde)
+                border-(--color-border)
                 rounded-2xl
                 overflow-hidden
                 flex

@@ -3,7 +3,7 @@ function StatsCard( {value, label}){
         <div className="
             bg-(--color-card)
             border
-            border(--color-card)
+            border-(--color-border)
             rounded-xl
             p-4
             text-center
@@ -11,7 +11,7 @@ function StatsCard( {value, label}){
             <p className="text-2xl font-semibold text-(--color-primary)">
                 {value}
             </p>
-            <p className="text-xs tex-(--color-muted) mt-1">
+            <p className="text-xs text-(--color-muted) mt-1">
                 {label}
             </p>
         </div>

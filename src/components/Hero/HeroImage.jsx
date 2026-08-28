@@ -7,25 +7,20 @@ function HeroImage(){
 <div className="relative flex justify-center items-center shrink-0 lg:mt-12">
 
         <Glow className="
-            w-90
-            h-90
-            md:w-115
-            md:h-115
-            lg:w-[min(560px,50vh)]
-            lg:h-[min(560px,50vh)]
+            w-72 h-72
+            md:w-80 md:h-80
+            lg:w-[min(560px,50vh)] lg:h-[min(560px,50vh)]
             "
             color="bg-cyan-500/20"
             blur="blur-3xl"
         />
 
         <Glow className="
-            w-60
-            h-60
-            md:w-77.5
-            md:h-77.5
-            lg:w-[min(370px,34vh)]
-            lg:h-[min(370px,34vh)]
-            translate-x-10 translate-y-10
+            w-52 h-52
+            md:w-60 md:h-60
+            lg:w-[min(370px,34vh)] lg:h-[min(370px,34vh)]
+            md:translate-x-4 md:translate-y-4
+            lg:translate-x-10 lg:translate-y-10
         "
             color="bg-indigo-500/20"
             blur="blur-2xl"
@@ -34,12 +29,9 @@ function HeroImage(){
         <div 
         className="
             relative
-            w-75
-            h-75
-            md:w-96
-            md:h-96
-            lg:w-[min(480px,44vh)]
-            lg:h-[min(480px,44vh)]
+            w-64 h-64
+            md:w-72 md:h-72
+            lg:w-[min(480px,44vh)] lg:h-[min(480px,44vh)]
             rounded-full
             overflow-hidden
             border
