@@ -89,7 +89,9 @@ function Footer(){
                                 <FaLinkedin className="text-xl" />
                             </a>
                             <a 
-                                href={`mailto:${profile.social.email}`}
+                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="
                                     w-11 h-11
                                     rounded-full
@@ -116,9 +118,6 @@ function Footer(){
                 <div className="mt-12 pt-8 border-t border-(--color-border) flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-(--color-muted)">
                         © {currentYear} Aaron Macedo. Todos los derechos reservados.
-                    </p>
-                    <p className="text-xs text-(--color-muted)">
-                        Construido con React, Tailwind CSS y Vite
                     </p>
                 </div>
             </Container>

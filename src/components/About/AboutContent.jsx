@@ -71,7 +71,9 @@ function AboutContent(){
                     <div>
                         <h4 className="text-lg font-semibold text-(--color-title)">Email</h4>
                         <a 
-                            href={`mailto:${profile.social.email}`}
+                            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-(--color-text) hover:text-sky-400 transition-colors"
                         >
                             {profile.social.email}

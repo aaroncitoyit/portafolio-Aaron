@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { profile } from "../../data/profile";
 
 function MobileMenu({ isOpen, onToggle, links, onLinkClick }) {
     const [height, setHeight] = useState(0);
@@ -80,7 +81,9 @@ function MobileMenu({ isOpen, onToggle, links, onLinkClick }) {
                         GitHub
                     </a>
                     <a
-                        href="mailto:orestesmacedo5@gmail.com"
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-sky-500 text-white font-medium hover:bg-sky-400 transition-all duration-300"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
