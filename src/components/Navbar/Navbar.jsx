@@ -31,7 +31,7 @@ function Navbar(){
                 border-(--color-border)
             "
             >
-                <Container>
+                <Container className="px-6">
                     <div 
                         className="
                                 h-20

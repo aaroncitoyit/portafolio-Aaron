@@ -12,7 +12,7 @@ function Hero(){
             className="
                 min-h-screen
                 lg:min-h-[90vh]
-                pt-20 lg:pt-32
+                pt-28 lg:pt-32
                 pb-24
                 lg:pb-0
                 flex
@@ -20,20 +20,12 @@ function Hero(){
                 relative
                 overflow-hidden
                 justify-center
-                px-6
-                sm:px-12
-                lg:px-24
                 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,.18),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(99,102,241,.12),transparent_35%)]
             "
         >
         <BackgroundGrid />
 
-        <Container 
-            className="
-                max-w-7xl 
-                w-full 
-                "
-        >
+        <Container className="w-full">
                 <div 
                     className="
                         flex 

@@ -2,12 +2,12 @@ import { FaGraduationCap } from "react-icons/fa";
 
 export const education = [
     {
-        id: "senati",
+        id: "upc",
         degree: "Desarrollo de Software",
-        institution: "Senati",
-        period: "2022 - 2025",
+        institution: "UPC",
+        period: "2021 - 2025",
         icon: FaGraduationCap,
-        description: "Formación técnica enfocada en desarrollo de aplicaciones web, bases de datos, metodologías ágiles y arquitectura de software.",
+        description: "Formación enfocada en desarrollo de aplicaciones web, bases de datos, metodologías ágiles y arquitectura de software.",
         achievements: [
             "Proyecto final: Pagina web con parsarela de producto",
             "Certificación en Fundamentos de Bases de Datos",
