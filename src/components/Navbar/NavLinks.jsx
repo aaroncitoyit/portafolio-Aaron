@@ -5,23 +5,22 @@ const links = [
         href: "#about",
     },
     {
-        name: "habilidades",
+        name: "Educación",
+        href: "#education",
+    },
+    {
+        name: "Habilidades",
         href: "#skills",
     },
     {
-        name: "Proyecto",
+        name: "Proyectos",
         href: "#projects",
     },
     {
-        name: "Experiencia",
-        href: "#experience",
-    },
-    {
-        name: "Contacto",
-        href: "#contact",
+        name: "GitHub",
+        href: "#github",
     },
 ];
-
 
 
 function NavLinks(){

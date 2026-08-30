@@ -1,4 +1,6 @@
 import StatsCard from "./StatsCard";
+import { FaEnvelope, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
+import { profile } from "../../data/profile";
 
 function AboutContent(){
     return(
@@ -50,6 +52,81 @@ function AboutContent(){
                     profesionalmente, aprender de otros desarrolladores y aportar valor en
                     proyectos reales.
             </p>
+
+            <div className="mt-10 space-y-6">
+                <div className="flex items-start gap-4">
+                    <div className="
+                        w-12 h-12 
+                        rounded-xl 
+                        bg-sky-500/10 
+                        border 
+                        border-sky-500/20 
+                        flex 
+                        items-center 
+                        justify-center 
+                        shrink-0
+                    ">
+                        <FaEnvelope className="text-sky-400" size={20} />
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold text-(--color-title)">Email</h4>
+                        <a 
+                            href={`mailto:${profile.social.email}`}
+                            className="text-(--color-text) hover:text-sky-400 transition-colors"
+                        >
+                            {profile.social.email}
+                        </a>
+                    </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                    <div className="
+                        w-12 h-12 
+                        rounded-xl 
+                        bg-sky-500/10 
+                        border 
+                        border-sky-500/20 
+                        flex 
+                        items-center 
+                        justify-center 
+                        shrink-0
+                    ">
+                        <FaMapMarkerAlt className="text-sky-400" size={20} />
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold text-(--color-title)">Ubicación</h4>
+                        <p className="text-(--color-text)">{profile.location}</p>
+                    </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                    <div className="
+                        w-12 h-12 
+                        rounded-xl 
+                        bg-sky-500/10 
+                        border 
+                        border-sky-500/20 
+                        flex 
+                        items-center 
+                        justify-center 
+                        shrink-0
+                    ">
+                        <FaGithub className="text-sky-400" size={20} />
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold text-(--color-title)">GitHub</h4>
+                        <a 
+                            href={profile.social.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-(--color-text) hover:text-sky-400 transition-colors"
+                        >
+                            {profile.social.github.replace("https://", "")}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div className="grid grid-cols-3 gap-3">
                 <StatsCard value="2+" label="Años aprenddiendo"/>
                 <StatsCard value="5+" label="Proyectos"/>

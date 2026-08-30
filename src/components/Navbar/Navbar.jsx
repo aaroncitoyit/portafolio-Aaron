@@ -9,11 +9,10 @@ function Navbar(){
 
     const links = [
         { name: "Acerca de", href: "#about" },
+        { name: "Educación", href: "#education" },
         { name: "Habilidades", href: "#skills" },
         { name: "Proyectos", href: "#projects" },
-        { name: "Experiencia", href: "#experience" },
-        { name: "Educación", href: "#education" },
-        { name: "Contacto", href: "#contact" },
+        { name: "GitHub", href: "#github" },
     ];
 
     const closeMobileMenu = () => setIsMobileMenuOpen(false);

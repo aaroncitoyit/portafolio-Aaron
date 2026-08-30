@@ -6,7 +6,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import About from './components/About'
-import Contact from './components/Contact'
+// import Contact from './components/Contact'
 import GitHub from './components/Github'
 import './App.css'
 
@@ -16,11 +16,11 @@ function App() {
       <Navbar/>
       <Hero/>
       <About />
+      <Education />
       <Skills />
       <Projects />
-      <Education />
       <GitHub />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
 
     </>
