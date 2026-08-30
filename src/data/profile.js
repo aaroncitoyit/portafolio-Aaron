@@ -15,7 +15,7 @@ export const profile = {
 ],
   social: {
     github: "https://github.com/aaroncitoyit",
-    linkedin: "https://www.linkedin.com/in/aaron-macedo-805bba2b4",
+   /*  linkedin: "https://www.linkedin.com/in/aaron-macedo-805bba2b4", */
     email: "orestesmacedo5@gmail.com",
     cv: "/cv/Aaron_Macedo_CV.pdf"
   }
