@@ -25,7 +25,7 @@ const iconClass =`
 function SocialLinks(){
     return(
         <div className="flex items-center gap-5 mt-10">
-            <a  
+           {/*  <a  
                 href={profile.social.github}
                 target="_blank"
                 rel="noreferrer"
@@ -46,7 +46,7 @@ function SocialLinks(){
               className={iconClass}
             >
                 <FaEnvelope />
-            </a>
+            </a> */}
         </div>
     );
 }

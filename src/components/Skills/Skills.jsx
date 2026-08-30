@@ -21,6 +21,7 @@ function Skills(){
                         gap-6
                         sm:gap-8
                         mt-12 lg:mt-16
+                        items-stretch
                 ">
                     {skills.map((category) => (
                     
