@@ -68,8 +68,6 @@ function Navbar(){
                             <div className="flex items-center gap-3">
                                 <a
                                     href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="
                                         hidden
                                         lg:inline-flex
@@ -96,8 +94,6 @@ function Navbar(){
 
                                 <a
                                     href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="
                                         inline-flex
                                         lg:hidden
