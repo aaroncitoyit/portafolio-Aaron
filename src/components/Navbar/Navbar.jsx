@@ -17,14 +17,21 @@ function Navbar(){
         const subject = "Consulta desde mi portafolio";
         const body = "Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.";
 
-        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-        window.location.href = mailtoUrl;
+        const fallbackWindow = window.open(gmailUrl, "_blank", "noopener,noreferrer");
+
+        if (!fallbackWindow) {
+            window.location.href = mailtoUrl;
+            return;
+        }
 
         window.setTimeout(() => {
-            window.open(gmailUrl, "_blank", "noopener,noreferrer");
-        }, 1200);
+            if (fallbackWindow.closed) {
+                window.location.href = mailtoUrl;
+            }
+        }, 1500);
     };
 
     const links = [
@@ -84,7 +91,9 @@ function Navbar(){
 
                             <div className="flex items-center gap-3">
                                 <a
-                                    href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                    href={
+                                        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`
+                                    }
                                     onClick={handleContactClick}
                                     className="
                                         hidden
@@ -111,7 +120,9 @@ function Navbar(){
                                 </a>
 
                                 <a
-                                    href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                    href={
+                                        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`
+                                    }
                                     onClick={handleContactClick}
                                     className="
                                         inline-flex
