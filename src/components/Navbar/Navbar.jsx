@@ -10,6 +10,23 @@ function Navbar(){
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
     const lastScrollY = useRef(0);
 
+    const handleContactClick = (event) => {
+        event.preventDefault();
+
+        const email = profile.social.email;
+        const subject = "Consulta desde mi portafolio";
+        const body = "Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.";
+
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoUrl;
+
+        window.setTimeout(() => {
+            window.open(gmailUrl, "_blank", "noopener,noreferrer");
+        }, 1200);
+    };
+
     const links = [
         { name: "Acerca de", href: "#about" },
         { name: "Educación", href: "#education" },
@@ -68,6 +85,7 @@ function Navbar(){
                             <div className="flex items-center gap-3">
                                 <a
                                     href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                    onClick={handleContactClick}
                                     className="
                                         hidden
                                         lg:inline-flex
@@ -94,6 +112,7 @@ function Navbar(){
 
                                 <a
                                     href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                    onClick={handleContactClick}
                                     className="
                                         inline-flex
                                         lg:hidden
