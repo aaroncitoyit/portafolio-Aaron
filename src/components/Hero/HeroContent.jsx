@@ -1,7 +1,8 @@
 import Button from "../ui/Button";
 import TechStack from "./TechStack";
 import SocialLinks from "./SocialLinks";
-import { profile  } from "../../data/profile";
+import { profile } from "../../data/profile";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function HeroContent(){
     return(
@@ -27,14 +28,19 @@ function HeroContent(){
                 {profile.description}
             </p>
 
-            </div>
-
-            <div className="mt-6 lg:mt-7">
-                <span className="inline-flex items-center px-4 py-2 rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
-                   🟢 {profile.status}
+            <div className="flex flex-wrap items-center gap-3 pt-1">
+                <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm text-slate-300">
+                    <FaMapMarkerAlt className="text-sky-400" />
+                    <span>Perú</span>
+                </div>
+                <span className="inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-3 py-2 text-sm text-green-400">
+                    <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
+                    {profile.status}
                 </span>
             </div>
-            
+
+            </div>
+
             <div className="mt-6 lg:mt-2 flex flex-wrap gap-4">
                 <Button>
                     Ver Proyectos

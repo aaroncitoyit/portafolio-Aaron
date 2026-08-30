@@ -32,7 +32,7 @@ function AboutCard(){
 
                 </div>
 
-                <div 
+                {/* <div 
                     className="
                     absolute
                     -bottom-5
@@ -84,7 +84,7 @@ function AboutCard(){
                                    Disponible
                         </div>
 
-                </div>
+                </div> */}
         </div>
     );
 }
