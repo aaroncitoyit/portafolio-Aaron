@@ -8,34 +8,10 @@ function Footer(){
     return(
         <footer className="bg-(--color-surface) border-t border-(--color-border)">
             <Container className="py-12 lg:py-16">
-                <div className="grid lg:grid-cols-3 gap-10 lg:gap-12">
-                    <div className="lg:col-span-1">
-                        <a 
-                            href="#home"
-                            className="
-                                text-2xl
-                                font-bold
-                                tracking-tight
-                                text-white
-                                transition-colors
-                                duration-300
-                                hover:text-sky-400
-                                inline-block
-                                mb-4
-                            "
-                        >
-                            Aaron
-                            <span className="text-sky-400">.</span>
-                        </a>
-                        <p className="text-(--color-text) leading-relaxed max-w-xs">
-                            Desarrollador Full Stack especializado en Java, Spring Boot, Laravel y React. 
-                            Construyo aplicaciones web modernas, escalables y enfocadas en la experiencia de usuario.
-                        </p>
-                    </div>
-
-                    <div className="lg:col-span-1">
+                <div className="grid gap-10 lg:gap-12 lg:grid-cols-2 lg:justify-items-center lg:items-start">
+                    <div className="lg:flex lg:flex-col lg:items-center lg:text-center">
                         <h4 className="text-lg font-semibold text-(--color-title) mb-4">Enlaces rápidos</h4>
-                        <nav className="space-y-3">
+                        <nav className="space-y-3 lg:items-center lg:flex lg:flex-col">
                             <a href="#about" className="text-(--color-text) hover:text-sky-400 transition-colors block">Sobre mí</a>
                             <a href="#skills" className="text-(--color-text) hover:text-sky-400 transition-colors block">Habilidades</a>
                             <a href="#projects" className="text-(--color-text) hover:text-sky-400 transition-colors block">Proyectos</a>
@@ -45,24 +21,36 @@ function Footer(){
                         </nav>
                     </div>
 
-                    <div className="lg:col-span-1">
+                    <div className="lg:flex lg:flex-col lg:items-center lg:text-center">
                         <h4 className="text-lg font-semibold text-(--color-title) mb-4">Conecta conmigo</h4>
-                        <div className="flex items-center gap-4 mb-6">
+                        <div className="flex items-center justify-center gap-4 mb-6">
                             <a 
                                 href={profile.social.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
+                                className="social-icon
                                     w-11 h-11
                                     rounded-full
                                     flex items-center justify-center
                                     bg-slate-800
                                     border
                                     border-slate-700
+                                    text-slate-200
                                     hover:border-sky-400
                                     hover:text-sky-400
+                                    hover:-translate-y-1
+                                    hover:scale-105
+                                    hover:shadow-lg
+                                    hover:shadow-sky-500/20
+                                    active:scale-95
+                                    focus-visible:outline-none
+                                    focus-visible:ring-2
+                                    focus-visible:ring-sky-400
+                                    focus-visible:ring-offset-2
+                                    focus-visible:ring-offset-(--color-surface)
                                     transition-all
                                     duration-300
+                                    ease-out
                                 "
                                 aria-label="GitHub"
                             >
@@ -72,17 +60,29 @@ function Footer(){
                                 href={profile.social.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
+                                className="social-icon
                                     w-11 h-11
                                     rounded-full
                                     flex items-center justify-center
                                     bg-slate-800
                                     border
                                     border-slate-700
+                                    text-slate-200
                                     hover:border-sky-400
                                     hover:text-sky-400
+                                    hover:-translate-y-1
+                                    hover:scale-105
+                                    hover:shadow-lg
+                                    hover:shadow-sky-500/20
+                                    active:scale-95
+                                    focus-visible:outline-none
+                                    focus-visible:ring-2
+                                    focus-visible:ring-sky-400
+                                    focus-visible:ring-offset-2
+                                    focus-visible:ring-offset-(--color-surface)
                                     transition-all
                                     duration-300
+                                    ease-out
                                 "
                                 aria-label="LinkedIn"
                             >
@@ -90,17 +90,29 @@ function Footer(){
                             </a>
                             <a 
                                 href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
-                                className="
+                                className="social-icon
                                     w-11 h-11
                                     rounded-full
                                     flex items-center justify-center
                                     bg-slate-800
                                     border
                                     border-slate-700
+                                    text-slate-200
                                     hover:border-sky-400
                                     hover:text-sky-400
+                                    hover:-translate-y-1
+                                    hover:scale-105
+                                    hover:shadow-lg
+                                    hover:shadow-sky-500/20
+                                    active:scale-95
+                                    focus-visible:outline-none
+                                    focus-visible:ring-2
+                                    focus-visible:ring-sky-400
+                                    focus-visible:ring-offset-2
+                                    focus-visible:ring-offset-(--color-surface)
                                     transition-all
                                     duration-300
+                                    ease-out
                                 "
                                 aria-label="Email"
                             >
