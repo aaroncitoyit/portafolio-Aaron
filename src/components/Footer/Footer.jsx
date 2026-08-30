@@ -4,6 +4,7 @@ import { profile } from "../../data/profile";
 
 function Footer(){
     const currentYear = new Date().getFullYear();
+    const gmailContactHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.social.email)}&su=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`;
 
     return(
         <footer className="bg-(--color-surface) border-t border-(--color-border)">
@@ -89,7 +90,9 @@ function Footer(){
                                 <FaLinkedin className="text-xl" />
                             </a>
                             <a 
-                                href={`mailto:${profile.social.email}?subject=${encodeURIComponent('Consulta desde mi portafolio')}&body=${encodeURIComponent('Hola Aaron,\n\nMe gustaría hablar contigo sobre una oportunidad.\n\nSaludos.')}`}
+                                href={gmailContactHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="social-icon
                                     w-11 h-11
                                     rounded-full
