@@ -52,7 +52,7 @@ function AboutContent(){
                     profesionalmente, aprender de otros desarrolladores y aportar valor en
                     proyectos reales.
             </p>
-
+{/* 
             <div className="mt-10 space-y-6">
                 <div className="flex items-start gap-4">
                     <div className="
@@ -125,7 +125,7 @@ function AboutContent(){
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="grid grid-cols-3 gap-3">
                 <StatsCard value="2+" label="Años aprenddiendo"/>
